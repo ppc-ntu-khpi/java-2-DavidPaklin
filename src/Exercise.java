@@ -1,7 +1,6 @@
-//package domain;
-
 public class Exercise {
-    public static float Calculate(int R){
-        return (float) (2*Math.PI*Math.sqrt(R));
-    }
+  public static boolean Calculate(String word) {
+    String lowercaseWord = word.toLowerCase(); // робимо всі букви в слові маленькими 
+    return lowercaseWord.equals(new StringBuilder(lowercaseWord).reverse().toString()); // реверсуємо слово та порівнюємо його з заданим нами словом
+  }
 }
